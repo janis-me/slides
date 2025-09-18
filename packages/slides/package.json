@@ -1,5 +1,5 @@
 {
-  "name": "@janis.me/starter-example",
+  "name": "@janis.me/slides",
   "version": "0.0.0",
   "private": true,
   "type": "module",
@@ -13,10 +13,18 @@
   },
   "main": "src/index.ts",
   "scripts": {
+    "build": "slidev build",
+    "dev": "slidev",
+    "export": "slidev export",
     "format": "prettier . --write"
+  },
+  "dependencies": {
+    "@slidev/cli": "catalog:slidev",
+    "vue": "catalog:slidev"
   },
   "devDependencies": {
     "@janis.me/linter-config": "workspace:*",
-    "@janis.me/typescript-config": "workspace:*"
+    "@janis.me/typescript-config": "workspace:*",
+    "slidev-theme-janis": "workspace:*"
   }
 }

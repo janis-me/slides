@@ -24,6 +24,7 @@
     "jiti": "catalog:lint",
     "prettier": "catalog:format",
     "prettier-plugin-packagejson": "catalog:format",
+    "prettier-plugin-slidev": "catalog:slidev",
     "taze": "catalog:script",
     "typescript": "catalog:build",
     "vitest": "catalog:test"

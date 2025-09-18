@@ -1,0 +1,31 @@
+{
+  "name": "slidev-theme-janis",
+  "version": "0.0.0",
+  "keywords": [
+    "slidev-theme",
+    "slidev"
+  ],
+  "type": "module",
+  "dependencies": {
+    "@iconify-json/fa7-brands": "^1.2.0",
+    "@iconify-json/fa7-solid": "^1.2.1",
+    "@iconify-json/mdi": "^1.2.3"
+  },
+  "devDependencies": {
+    "@janis.me/linter-config": "workspace:*",
+    "@janis.me/typescript-config": "workspace:*",
+    "@slidev/cli": "catalog:slidev",
+    "@slidev/types": "catalog:slidev"
+  },
+  "slidev": {
+    "defaults": {
+      "colorSchema": "dark",
+      "aspectRatio": "16/9",
+      "transition": "fade",
+      "fonts": {
+        "sans": "Nunito Sans",
+        "mono": "Fira Code"
+      }
+    }
+  }
+}

@@ -15,5 +15,14 @@
     "",
     "^[./].*(?<!\\.(c|le|sc)ss)$",
     "\\.(c|le|sc)ss$"
+  ],
+  "overrides": [
+    {
+      "files": ["packages/slides/**/*.md"],
+      "options": {
+        "parser": "slidev",
+        "plugins": ["prettier-plugin-slidev"]
+      }
+    }
   ]
 }
