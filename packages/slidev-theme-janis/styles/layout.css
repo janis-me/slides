@@ -3,6 +3,7 @@
   --slidev-theme-secondary: #abc4ff;
   --slidev-theme-text: #f1f0ea;
   --slidev-theme-background: #2d232e;
+  --slidev-transition-duration: 500ms;
 }
 
 .slidev-layout {
@@ -48,16 +49,16 @@
 
   h1 {
     color: inherit;
-    @apply text-6xl leading-20;
+    @apply text-4xl leading-15;
   }
 
   h2 {
-    @apply -mt-4 text-2xl;
+    @apply -mt-4 text-2xl leading-15;
   }
 
   h3 {
     position: absolute;
-    @apply bottom-8;
+    @apply bottom-8 lowercase;
   }
 }
 

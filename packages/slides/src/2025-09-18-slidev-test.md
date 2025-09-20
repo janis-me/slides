@@ -3,9 +3,9 @@ theme: slidev-theme-janis
 layout: intro
 ---
 
-# Making youtube videos with markdown
+# Making awesome presentations (and more) with Slidev
 
-## Using slidev and some fancy tricks!
+## An intro to modern slideshows for developers - made with markdown
 
 ### Janis (janis.me, mail@janis.me)
 
@@ -21,9 +21,16 @@ So today, I want to show you how I made this exact video using web technology an
 layout: intro
 ---
 
-# You'll be looking at
+# We'll talk about
 
-## Slidev, Shiki, Markdown, Vue and Typescript
+<v-clicks>
+
+- What slidev is
+- How to use it (in less than a minute)
+- my ideal repository setup (don't be scared)
+- Customizing themes, layouts.. everything
+
+</v-clicks>
 
 <!--
 You will be looking at 
@@ -35,9 +42,35 @@ You will be looking at
 -->
 
 ---
-layout: introVideo
+layout: center
 ---
 
+<div
+  v-motion
+  :initial="{
+    opacity: 0,
+    y: 100,
+  }"
+  :enter="{
+    opacity: 1,
+    y: 0,
+    transition: {
+      type: 'spring',
+      stiffness: '100',
+      delay: 100,
+    },
+  }"
+>
+  let's do this
+</div>
+
+---
+layout: introVideo
+transition: fade
+---
+
+---
+transition: fade
 ---
 
 # Guess what
@@ -74,7 +107,6 @@ And right now, I'm doing the voiceover and am recording the slideshow... as you 
 
 ---
 -->
-
 ---
 
 # Some code

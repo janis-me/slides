@@ -21,7 +21,6 @@
     "defaults": {
       "colorSchema": "dark",
       "aspectRatio": "16/9",
-      "transition": "fade",
       "fonts": {
         "sans": "Nunito Sans",
         "mono": "Fira Code"
