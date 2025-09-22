@@ -1,13 +1,22 @@
 :root {
-  --slidev-theme-primary: #e0ddcf;
+  --slidev-theme-primary: #f1f0ea;
   --slidev-theme-secondary: #abc4ff;
-  --slidev-theme-text: #f1f0ea;
+  --slidev-theme-text: #e0ddcf;
   --slidev-theme-background: #2d232e;
   --slidev-transition-duration: 500ms;
 }
 
+.slidev-note {
+  @apply text-$slidev-theme-text;
+
+  & p,
+  code {
+    @apply text-$slidev-theme-text;
+  }
+}
+
 .slidev-layout {
-  @apply relative h-full text-$slidev-theme-primary bg-$slidev-theme-background;
+  @apply relative h-full text-$slidev-theme-text bg-$slidev-theme-background;
 
   h1 + p {
     @apply -mt-2 opacity-50 mb-4;
@@ -27,11 +36,8 @@
   h2,
   h3,
   h4 {
+    @apply text-$slidev-theme-primary;
     text-wrap: balance;
-  }
-
-  p {
-    @apply text-$slidev-theme-text;
   }
 
   h3 {
@@ -45,10 +51,9 @@
 
 .slidev-layout.cover,
 .slidev-layout.intro {
-  @apply h-full grid text-$slidev-theme-primary;
+  @apply h-full grid;
 
   h1 {
-    color: inherit;
     @apply text-6xl leading-18 font-bold;
   }
 
