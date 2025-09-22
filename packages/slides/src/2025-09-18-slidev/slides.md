@@ -3,9 +3,23 @@ theme: slidev-theme-janis
 layout: intro
 ---
 
-# Making awesome presentations (and more) with Slidev
+<h1>
+  <SlideIn v-click m-2>Making </SlideIn>
+  <SlideIn v-click m-2 underline>awesome </SlideIn>
+  
+  <br />
+  <SlideIn v-click m-2>presentations </SlideIn>
+
+  <br />
+  <SlideIn v-click m-2>with </SlideIn>
+  <SlideIn v-click m-2 underline color="#72B7CF">Slidev</SlideIn>
+</h1>
+
+<SlideIn v-click>
 
 ## An intro to modern slideshows for developers - made with markdown
+
+</SlideIn>
 
 ### Janis (janis.me, mail@janis.me)
 
@@ -45,24 +59,9 @@ You will be looking at
 layout: center
 ---
 
-<div
-  v-motion
-  :initial="{
-    opacity: 0,
-    y: 100,
-  }"
-  :enter="{
-    opacity: 1,
-    y: 0,
-    transition: {
-      type: 'spring',
-      stiffness: '100',
-      delay: 100,
-    },
-  }"
->
+<SlideIn>
   let's do this
-</div>
+</SlideIn>
 
 ---
 layout: introVideo
@@ -71,6 +70,45 @@ transition: fade
 
 ---
 transition: fade
+layout: center
+---
+
+<SlideIn>
+  A quick note
+</SlideIn>
+
+---
+layout: two-cols-header
+---
+
+<h1 text-center>
+This video is free, open source and interactive!
+</h1>
+
+::left::
+
+<div text-center h-full flex flex-col justify-center>
+  <SlideIn block v-click m-6>
+    <fa7-solid:book text-4xl />
+  </SlideIn>
+
+  <SlideIn block v-click text-s m-1>
+    janis.me/blog
+  </SlideIn>
+</div>
+
+::right::
+
+<div text-center h-full flex flex-col justify-center>
+  <SlideIn block v-click m-6>
+    <fa7-solid:code text-4xl />
+  </SlideIn>
+
+  <SlideIn block v-click text-s m-1>
+    github.com/janis-me
+  </SlideIn>
+</div>
+
 ---
 
 # Guess what

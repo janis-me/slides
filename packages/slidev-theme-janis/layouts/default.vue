@@ -5,6 +5,5 @@
     </div>
   </div>
 
-  <Extras />
   <LogoBottom />
 </template>
